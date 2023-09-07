@@ -1,0 +1,12 @@
+PROJETO=aula
+#gera um novo projeto e instala bibliotecas
+npx -y create-docusaurus@latest ${PROJETO} classic --typescript
+
+#entra no diretorio onde o projeto foi criado
+cd ${PROJETO}
+
+#instala as bibliotecas em um projeto já existente
+npm install
+
+#inicializa o servidor
+npx docusaurus start --host 0.0.0.0
